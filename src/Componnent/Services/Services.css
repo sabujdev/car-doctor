@@ -1,0 +1,30 @@
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+.service-title {
+  display: flex;
+  justify-content: center;
+}
+
+/* make services responsive  */
+
+@media only screen and(min-width:576px) {
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-wedth: 992) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media (min-width: 992px) {
+  .services-container {
+    grid-template-columns: repea    t(2, 1fr);
+  }
+} */
